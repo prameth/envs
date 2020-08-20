@@ -1,0 +1,11 @@
+torch==1.6.0+cu101
+torchvision==0.7.0+cu101
+connexion==1.5
+pyyaml==3.12
+scipy>=1.1.0
+scikit-image>=0.14.0
+tqdm==4.24.0
+flask-cors
+jupyter
+setuptools
+ninja
