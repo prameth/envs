@@ -1,2 +1,5 @@
-
 .DS_Store
+SSH/.README.md.swp
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+**/.ipynb_checkpoints

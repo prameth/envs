@@ -26,9 +26,33 @@ jupyter notebook --no-browser --port=7009 --ip 127.0.0.1
 ssh -N -f -L localhost:8888:localhost:7009 root@0.tcp.ngrok.io -p <port>
 ```
 
+- If the command `nvidia-smi` doesn't work, run this
+```
+export LD_PRELOAD=/usr/lib64-nvidia/libnvidia-ml.so
+```
+
 Optional(but highly recommended to use GNU Screen, VIM)
 
 ```
 apt-get install screen
 apt-get install vim
+```
+
+For Conda Env
+
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.2-Linux-x86_64.sh
+chmod +x Miniconda3-py37_4.8.2-Linux-x86_64.sh
+bash ./Miniconda3-py37_4.8.2-Linux-x86_64.sh -b -f -p /usr/local
+```
+
+```
+import sys
+sys.path.append('/usr/local/lib/python3.7/site-packages/')
+```
+
+```
+conda init bash
+<REQUIRES A RESTART OF THE TERMINAL>
+conda activate
 ```
